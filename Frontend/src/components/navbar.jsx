@@ -10,7 +10,7 @@ const navbar = () => {
       <li>
         <details>
           <summary>Course</summary>
-          <ul classname="p-2">
+          <ul className="p-2">
             <li>
               <a>CSIT</a>
             </li>
@@ -31,7 +31,7 @@ const navbar = () => {
   return (
     <>
       <div className="max-w-screen-2x1 container mx-auto md:px-20 px-4">
-        <div className="navbar bg-base-100">
+        <div className="navbar">
           <div className="navbar-start">
             <div className="dropdown">
               <div
