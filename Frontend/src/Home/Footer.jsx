@@ -54,7 +54,6 @@ const Footer = () => {
           </p>
         </aside>
       </footer>
-      ;
     </>
   );
 }

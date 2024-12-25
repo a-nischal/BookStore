@@ -1,21 +1,21 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Banner from './components/Banner';
-import Footer from './components/Footer';
-import Freebook from './components/Freebook';
+import React from "react";
+import Home from "./Home/Home";
+import { Route, Routes } from "react-router-dom";
+import Courses from "./components/Courses/Course1";
 
 const App = () => {
   return (
     <>
-      <div data-theme ="default">
+      <div data-theme="default">
         {" "}
-        <Navbar />
-        <Banner />
-        <Footer />
-        <Freebook/>
+        {/* <Home /> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Courses" element={<Courses />}/>
+        </Routes>
       </div>
     </>
   );
-}
+};
 
-export default App
+export default App;
