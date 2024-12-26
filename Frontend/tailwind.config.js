@@ -1,12 +1,15 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js (ES Module syntax)
+import daisyui from "daisyui";
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui")],
+  plugins: [daisyui],
   daisyui: {
-    themes: ["light",
+    themes: [
+      "light",
       "dark",
       "cupcake",
       "bumblebee",
@@ -37,6 +40,7 @@ export default {
       "winter",
       "dim",
       "nord",
-      "sunset"],
+      "sunset",
+    ],
   },
 };

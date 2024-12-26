@@ -1,21 +1,21 @@
-import React, { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
-const navbar = () => {
-  // const [theme, setTheme] = usestate(
-  //   localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
-  // );
-  // const element = document.documentElement;
-  // useEffect(() => {
-  //   if (theme === "dark") {
-  //     element.classList.add("dark");
-  //     localStorage.setItem("theme", "dark");
-  //     document.body.classList.add("dark");
-  //   } else {
-  //     element.classList.remove("dark");
-  //     localStorage.setItem("theme", "light");
-  //     document.body.classList.remove("dark");
-  //   }
-  // }, []);
+const Navbar = () => {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
+  const element = document.documentElement;
+  useEffect(() => {
+    if (theme === "dark") {
+      element.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      document.body.classList.add("dark");
+    } else {
+      element.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      document.body.classList.remove("dark");
+    }
+  });
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -178,4 +178,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

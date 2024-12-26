@@ -1,8 +1,6 @@
-import React from 'react'
 import Navbar from '../../Home/Navbar'
 import Footer from '../../Home/Footer'
 import Course from "../Course"
-import list from "../../list.json"
 
 function Courses() {
   return (

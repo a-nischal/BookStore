@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../Home/Card";
 import list from "../list.json";
 
