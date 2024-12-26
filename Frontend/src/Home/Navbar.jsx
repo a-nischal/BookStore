@@ -52,7 +52,7 @@ const Navbar = () => {
         </details> */}
       </li>
       <li>
-        <a>Contact</a>
+        <a href="/Contact">Contact</a>
       </li>
       <li>
         <a>About</a>
