@@ -4,7 +4,7 @@ function Cart({ item }) {
   return (
     <>
       <div className="mt-4 my-3 p-3">
-        <div className="card bg-base-100 w-92 shadow-xl ">
+        <div className="card bg-base-100 w-92 shadow-xl hover:scale-90 duration-200">
           <figure>
             <img src={item.image} alt="Shoes" />
           </figure>

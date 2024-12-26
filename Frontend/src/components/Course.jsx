@@ -1,4 +1,7 @@
 import React from "react";
+import Card from "../Home/Card";
+import list from "../list.json";
+
 function Courses() {
   return (
     <>
@@ -17,7 +20,14 @@ function Courses() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <button className="mt-4 bg-pink-500 text-white px-3 py-2 rounded-lg hover:bg-pink-700 duration-300"><a href="/">Back</a></button>
+          <button className="mt-4 bg-pink-500 text-white px-3 py-2 rounded-lg hover:bg-pink-700 duration-300">
+            <a href="/">Back</a>
+          </button>
+        </div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-4 ">
+          {list.map((item) => (
+            <Card key={item.id} item={item} />
+          ))}
         </div>
       </div>
     </>
