@@ -15,7 +15,7 @@ const Navbar = () => {
       localStorage.setItem("theme", "light");
       document.body.classList.remove("dark");
     }
-  });
+  }, [element.classList, theme]);
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -55,16 +55,16 @@ const Navbar = () => {
         <a href="/Contact">Contact</a>
       </li>
       <li>
-        <a>About</a>
+        <a href="/About">About</a>
       </li>
     </>
   );
   return (
     <>
       <div
-        className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 right-0 left-0 z-10 ${
+        className={`max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-900 dark:text-white fixed top-0 right-0 left-0 z-10 ${
           sticky
-            ? "sticky-navbar shadow-md bg-base-200 duration-300 transition-all ease-in-out"
+            ? "sticky-navbar shadow-md bg-base-200 dark:bg-slate-900 dark:text-white duration-300 transition-all ease-in-out"
             : ""
         }`}
       >

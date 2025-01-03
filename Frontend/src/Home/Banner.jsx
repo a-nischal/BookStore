@@ -1,4 +1,3 @@
-import React from "react";
 import banner from "/Banner.png";
 
 const Banner = () => {
@@ -8,7 +7,7 @@ const Banner = () => {
         <div className="w-full order-2 md:order-1 md:w-1/2 mt-10 md:mt-32">
           <div className="space-y-5">
             <h1 className="text-2xl">
-              Hello, Let's Learn{" "}
+              Hello, Let&apos;s Learn{" "}
               <span className="text-pink-500">Something</span>
             </h1>
             <p className="text-xl">
