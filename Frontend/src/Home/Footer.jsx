@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Footer = () => {
   return (
@@ -50,7 +49,7 @@ const Footer = () => {
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by
-            J3rRy's Corporation Ltd
+            J3rRy&apos;s Corporation Ltd
           </p>
         </aside>
       </footer>

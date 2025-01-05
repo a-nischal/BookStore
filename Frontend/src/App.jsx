@@ -7,7 +7,7 @@ import About from "./components/About/about";
 const App = () => {
   return (
     <>
-      <div className="dark:bg-slate-900 dark:text-white">
+      <div data-theme="light">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Courses" element={<Courses />} />
