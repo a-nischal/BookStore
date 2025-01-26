@@ -62,7 +62,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-900 dark:text-white fixed top-0 right-0 left-0 z-10 ${
+        className={`max-w-screen-2xl container mb-5 mx-auto md:px-20 px-4 dark:bg-slate-900 dark:text-white fixed top-0 right-0 left-0 z-10 ${
           sticky
             ? "sticky-navbar shadow-md bg-base-200 dark:bg-slate-900 dark:text-white duration-300 transition-all ease-in-out"
             : ""
@@ -134,7 +134,6 @@ const Navbar = () => {
                   checked={theme === "dark"}
                   onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
                 />
-                {/* <button onClick={()=>setTheme(theme==="dark"?"light":"dark")}> */}
                   <svg
                     className="stroke-base-100 fill-base-100 col-start-1 row-start-1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -151,14 +150,10 @@ const Navbar = () => {
                       setTheme(newTheme);
                       localStorage.setItem("theme", newTheme); // Optional, as useEffect handles this
                     }}
-                    // onClick={() =>
-                    //   setTheme(theme === "dark" ? "light" : "dark")
-                    // }
                   >
                     <circle cx="12" cy="12" r="5" />
                     <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
                   </svg>
-                {/* </button> */}
                 <svg
                   className="stroke-base-100 fill-base-100 col-start-2 row-start-1"
                   xmlns="http://www.w3.org/2000/svg"
